@@ -14,6 +14,11 @@
             <img src="logo.jpg" alt="Kasselsvlei Primary School Logo">
             <h1>Kasselsvlei Primary / Kasselsvlei Primêr </h1>
         </div>
+
+ <div class="Hamburger">
+         &#9776; <!-- Unicode hamburger icon -->   
+        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -53,4 +58,13 @@
     <footer>
         <p>&copy; 2025 Kasselsvlei Primary / Kasselsvlei Primêr. All rights reserved.</p>
     </footer>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show'); // toggles dropdown
+    });
+</script>
+
 </body>
