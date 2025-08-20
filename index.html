@@ -8,36 +8,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
+      
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="Kasselsvlei Primary School Logo">
-            <h1>Kasselsvlei Primary / Kasselsvlei Primêr </h1>
-        </div>
-        <div class="Hamburger">
-         &#9776; <!-- Unicode hamburger icon -->   
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="Mission&Vision.html">Mission & Vision</a></li>
-                <li><a href="Staff.Html">Staff</a></li>
-                <li><a href="KassieTimes.html">The Kassie Times</a></li>
-                <li><a href="sports.html">Sports & Culture</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-links">
-            <a href="https://www.instagram.com/kasselsvleiprimary/" target="_blank" class="social-icon instagram">
-                <img src="icons8-instagram-48.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/1DALaqBM36/?mibextid=wwXlfr" target="_blank" class="social-icon facebook">
-                <img src="icons8-facebook-48.png" alt="Facebook">
-            </a>
-    </nav>
-    </header>
+   <header>
+    <div class="logo">
+        <img src="logo.jpg" alt="Kasselsvlei Primary School Logo">
+        <h1>Kasselsvlei Primary / Kasselsvlei Primêr</h1>
+    </div>
+
+      <nav>
+       <ul>
+  <li class="dropdown">
+    <!-- 🔽 Hamburger button -->
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <svg viewBox="0 0 100 80" width="30" height="30" fill="white">
+        <rect width="100" height="10"></rect>
+        <rect y="30" width="100" height="10"></rect>
+        <rect y="60" width="100" height="10"></rect>
+      </svg>
+    </button>
+
+    <!-- 🔽 Dropdown content -->
+    <ul class="dropdown-content">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="Mission&Vision.html">Mission & Vision</a></li>
+      <li><a href="Staff.html">Staff</a></li>
+      <li><a href="KassieTimes.html">The Kassie Times</a></li>
+      <li><a href="sports.html">Sports & Culture</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </li>
+</ul>
+      </nav>
+    <div class="social-links">
+        <a href="https://www.instagram.com/kasselsvleiprimary/" target="_blank" class="social-icon instagram">
+            <img src="icons8-instagram-48.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/share/1DALaqBM36/?mibextid=wwXlfr" target="_blank" class="social-icon facebook">
+            <img src="icons8-facebook-48.png" alt="Facebook">
+        </a>
+    </div>
+</header>
+
     <img src="Banner.jpg" alt="image of school">
     <img src="SCHOOL.jpeg" alt="image of school">
     <main>
@@ -45,15 +59,11 @@
     <footer>
         <p>&copy; 2025 Kasselsvlei Primary / Kasselsvlei Primêr. All rights reserved.</p>
     </footer>
-    <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('show'); // toggles dropdown
-    });
+<script>
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+  document.querySelector(".dropdown-content").classList.toggle("show");
+});
 </script>
-
 </body>
 </html>
 
