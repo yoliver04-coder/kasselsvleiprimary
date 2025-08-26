@@ -339,3 +339,10 @@ body::before {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7); /* White tint at 70% opacity */
     z-index: -1;
+}
+.content h3 {
+    font-size: 1.25em;
+    color: black;
+    margin-top: 20px;
+    text-decoration: underline;
+}
